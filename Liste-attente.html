@@ -1,0 +1,61 @@
+html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>File d'attente</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+
+  <h1>File d'attente</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Numéro</th>
+        <th>Service</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="num">A23</td>
+        <td class="service">Dépôt</td>
+        <td class="status"><span class="badge en-cours">En cours</span></td>
+      </tr>
+      <tr>
+        <td class="num">A24</td>
+        <td class="service">Retrait</td>
+        <td class="status"><span class="badge en-attente">En attente</span></td>
+      </tr>
+      <tr>
+        <td class="num">A22</td>
+        <td class="service">Dépôt</td>
+        <td class="status"><span class="badge termine">Terminé</span></td>
+      </tr>
+      <tr>
+        <td class="num">A25</td>
+        <td class="service">Consultation</td>
+        <td class="status"><span class="badge en-attente">En attente</span></td>
+      </tr>
+      <tr>
+        <td class="num">A26</td>
+        <td class="service">Retrait</td>
+        <td class="status"><span class="badge en-attente">En attente</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="wait-box">
+    Temps d'attente estimé : 12 minutes
+  </div>
+
+  <button class="btn-refresh" onclick="location.reload()">Actualiser</button>
+
+</div>
+</body>
+</html>
