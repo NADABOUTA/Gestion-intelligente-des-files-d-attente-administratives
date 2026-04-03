@@ -21,19 +21,34 @@ header {
   align-items: center;
 }
 
+header .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 8px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .btn-start {
   background: white;
   color: black;
-  padding: 8px 15px;
+  padding: 8px 16px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 /* ══════════════════════════════
@@ -48,38 +63,46 @@ nav a {
 }
 
 .hero-text {
-  max-width: 50%;
+  max-width: 45%;
 }
 
-.hero h1 {
+.hero-text h1 {
   font-size: 32px;
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  color: #1a1a1a;
 }
 
-.hero-image img {
-  width: 350px;
-  border-radius: 10px;
-}
-
-.buttons button {
-  margin-right: 10px;
+.buttons {
+  display: flex;
+  gap: 12px;
 }
 
 .btn-primary {
   background: #7a1f1f;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .btn-secondary {
-  background: #ddd;
-  padding: 10px 20px;
+  background: #e0e0e0;
+  color: #333;
+  padding: 12px 24px;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 14px;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 10px;
 }
 
 /* ══════════════════════════════
@@ -89,21 +112,39 @@ nav a {
   background: #555;
   color: white;
   text-align: center;
-  padding: 80px 20px;
-  margin: 60px 0;
+  padding: 60px 40px;
+}
+
+.features h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .card {
   background: #7a1f1f;
-  padding: 30px;
-  margin: 10px;
+  padding: 30px 20px;
+  width: 140px;
   border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 12px;
+  opacity: 0.9;
 }
 
 /* ══════════════════════════════
@@ -116,20 +157,24 @@ nav a {
 }
 
 .how-new h2 {
-  margin-bottom: 40px;
-  font-size: 28px;
+  margin-bottom: 50px;
+  font-size: 26px;
+  color: #1a1a1a;
 }
 
 .steps {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .steps::before {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 24px;
   left: 10%;
   width: 80%;
   height: 3px;
@@ -141,6 +186,7 @@ nav a {
   width: 22%;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .circle {
@@ -154,90 +200,105 @@ nav a {
   justify-content: center;
   margin: 0 auto 15px;
   font-weight: bold;
-}
-
-.step h3 {
-  margin-bottom: 10px;
   font-size: 16px;
 }
 
-.step p {
+.step h3 {
   font-size: 14px;
-  color: #555;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.step p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
 }
 
 /* ══════════════════════════════
    ADVANTAGES
 ══════════════════════════════ */
-.advantages-simple {
-  background: #f9f9f9;
+/* ADVANTAGES SECTION */
+.advantages {
+  background: #4a4a4a;
   padding: 60px 20px;
   text-align: center;
 }
 
-.advantages-simple h2 {
-  font-size: 28px;
+.advantages h2 {
+  color: #fff;
   margin-bottom: 40px;
 }
 
+/* container */
 .adv-cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
+/* card */
 .adv-card {
-  background: white;
-  padding: 25px;
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
   width: 260px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
   transition: 0.3s;
 }
 
+/* hover effect */
 .adv-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.icon {
-  font-size: 30px;
+/* icon */
+.adv-card .icon {
+  font-size: 40px;
   margin-bottom: 15px;
 }
 
+/* title */
 .adv-card h3 {
   margin-bottom: 10px;
-  font-size: 18px;
+  color: #7d2a2a;
 }
 
+/* text */
 .adv-card p {
-  font-size: 14px;
-  color: #666;
+  font-size: 0.9rem;
+  color: #555;
 }
-
 /* ══════════════════════════════
    CTA
 ══════════════════════════════ */
 .cta {
   text-align: center;
-  padding: 50px;
+  padding: 80px 40px;
   background: white;
 }
 
 .cta h2 {
-  margin-bottom: 20px;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #1a1a1a;
 }
+
+
 
 /* ══════════════════════════════
    PAGE 2 — WRAPPER + CONTAINER
 ══════════════════════════════ */
 .page2-wrapper {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 110px);
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f2f1ef;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 .page2 {
@@ -249,11 +310,12 @@ nav a {
 }
 
 .page2 h1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 36px;
   font-family: Georgia, serif;
+  font-weight: bold;
 }
 
 /* ══════════════════════════════
@@ -263,7 +325,7 @@ nav a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 32px;
 }
 
@@ -275,12 +337,12 @@ nav a {
   display: block;
   width: 100%;
   padding: 18px 28px;
-  background: #e4e2df;
+  background: #3b3a3a;
   border: 2px solid transparent;
   border-radius: 50px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: #1a1a1a;
+  color: #ffffff;
   cursor: pointer;
   text-align: center;
   transition: background 0.2s, border-color 0.2s;
@@ -288,8 +350,8 @@ nav a {
 }
 
 .services label:hover {
-  background: #d8d5d1;
-  border-color: #c9c5c0;
+  background: #3a3937;
+  border-color: #662e2e;
 }
 
 .services input[type="radio"]:checked + label {
@@ -303,12 +365,12 @@ nav a {
 ══════════════════════════════ */
 .ticket-btn {
   display: block;
-  padding: 16px 48px;
-  background: #aaa;
+  padding: 14px 40px;
+  background: #7d2a2a;
   color: #fff;
   border: none;
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -328,15 +390,405 @@ nav a {
 }
 
 /* ══════════════════════════════
-   FOOTER
+   PAGE 3 
 ══════════════════════════════ */
-footer {
-  background: black;
-  color: white;
+.page3-wrapper {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f1ef;
+  padding: 60px 20px;
+}
+
+.page3 {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page3 h1 {
+  font-size: 1.9rem;
+  color: #1a1a1a;
   text-align: center;
-  padding: 20px 40px;
+  margin-bottom: 36px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+/* carte ticket */
+.ticket-card {
+  background: #e2e0dd;
+  border-radius: 16px;
+  padding: 30px 50px;
+  text-align: center;
+  margin-bottom: 32px;
+  min-width: 220px;
+}
+
+.ticket-number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.ticket-line {
+  border: none;
+  border-top: 2px solid #bbb;
+  margin: 10px 0 16px;
+}
+
+.ticket-label {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.ticket-service {
+  font-size: 15px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.ticket-time {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* bouton retour */
+.btn-retour {
+  display: block;
+  padding: 14px 36px;
+  margin: 14px auto 0;
+  background: #7d2a2a;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-retour:hover {
+  background: #621f1f;
+}
+
+
+/* ══════════════════════════════
+   PAGE 4 — FILE D'ATTENTE
+══════════════════════════════ */
+.page4-wrapper {
+  min-height: calc(100vh - 110px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #f2f1ef;
+  padding: 50px 20px;
+}
+
+.page4 {
+  width: 100%;
+  max-width: 620px;
+}
+
+.page4 h1 {
+  font-size: 1.9rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+/* tableau */
+.queue-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.queue-table thead tr {
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.queue-table th {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 10px 12px;
+}
+
+.queue-table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.queue-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.queue-num {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 18px 12px;
+  width: 30%;
+}
+
+.queue-service {
+  font-size: 14px;
+  color: #444;
+  padding: 18px 12px;
+  width: 35%;
+}
+
+.queue-table td:last-child {
+  padding: 18px 12px;
+  width: 35%;
+}
+
+/* badges status */
+.badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.badge.en-cours {
+  background: #f5e6a3;
+  color: #7a6000;
+}
+
+.badge.en-attente {
+  background: #f0b8b8;
+  color: #7a1f1f;
+}
+
+.badge.termine {
+  background: #b8e6c1;
+  color: #1a6630;
+}
+
+
+
+/* ══════════════════════════════
+   ADMIN PAGE
+══════════════════════════════ */
+.admin-wrapper {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: #1a1a1a;
+  min-height: calc(100vh - 52px);
+  align-items: flex-start;
+}
+
+/* colonnes */
+.admin-left {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.admin-right {
+  flex: 0.8;
+}
+
+/* carte blanche */
+.admin-card {
+  background: #f2f1ef;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* titres sections */
+.admin-section-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+/* info boxes NUMERO + GUICHET */
+.admin-info-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.admin-info-box {
+  flex: 1;
+  background: #e2e0dd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.admin-info-label {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.admin-info-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* boutons actions */
+.admin-btn-primary {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #7a1f1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.admin-btn-secondary {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #e2e0dd;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.admin-btn-secondary:hover {
+  background: #d5d2ce;
+}
+
+/* tableau historique */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.admin-table th {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 10px 12px;
+  border-bottom: 2px solid #ccc;
+  text-align: left;
+}
+
+.admin-table td {
+  font-size: 13px;
+  color: #333;
+  padding: 12px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* file d'attente droite */
+.admin-queue-header {
+  margin-bottom: 16px;
+}
+
+.admin-queue-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.admin-queue-count {
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+.admin-queue-item {
+  background: #e2e0dd;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-queue-num {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.admin-queue-time {
+  font-size: 12px;
+  color: #666;
+}
+
+.badge-suivant {
+  background: #7a1f1f;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+footer {
+  background: #000000;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer p,
+footer li,
+footer a {
+  font-size: 13px;
+  color: #dfd6d6;
+  text-decoration: none;
+  line-height: 2;
+  text-decoration: none;
   list-style: none;
 }
+
+footer h5 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+

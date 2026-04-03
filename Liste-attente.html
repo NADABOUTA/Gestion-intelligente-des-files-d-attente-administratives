@@ -1,85 +1,63 @@
-html
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>File d'attente</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>Nexto - File d'attente</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <b>Nexto</b>
-    <nav>
-      <a href="index.html">Accueil</a>
-    </nav>
-  </header>
-<div class="container">
 
-  <h1>File d'attente</h1>
+<!-- HEADER -->
+<header>
+  <div class="logo"></div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="Admin-panel.html">ADMIN PANEL</a>
+  </nav>
+</header>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Numéro</th>
-        <th>Service</th>
-        <th>Statut</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="num">A23</td>
-        <td class="service">Dépôt</td>
-<td><span class="badge en-cours">En cours</span></td>
-      </tr>
-      <tr>
-        <td class="num">A24</td>
-        <td class="service">Retrait</td>
-        <td class="status"><span class="badge en-attente">En attente</span></td>
-      </tr>
-      <tr>
-        <td class="num">A22</td>
-        <td class="service">Dépôt</td>
-        <td class="status"><span class="badge termine">Terminé</span></td>
-      </tr>
-      <tr>
-        <td class="num">A25</td>
-        <td class="service">Consultation</td>
-        <td class="status"><span class="badge en-attente">En attente</span></td>
-      </tr>
-      <tr>
-        <td class="num">A26</td>
-        <td class="service">Retrait</td>
-        <td class="status"><span class="badge en-attente">En attente</span></td>
-      </tr>
-    </tbody>
-  </table>
+<!-- PAGE 4 MAIN -->
+<div class="page4-wrapper">
+  <div class="page4">
 
-<div class="temps-attente-estime">
-    Temps d'attente estimé : 12 minutes
+    <h1>File d'attente</h1>
+
+    <table class="queue-table">
+      <thead>
+        <tr>
+          <th>Numero</th>
+          <th>Service</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="queue-num">N12</td>
+          <td class="queue-service">Dépôt</td>
+          <td><span class="badge en-cours">En cours</span></td>
+        </tr>
+        <tr>
+          <td class="queue-num">N25</td>
+          <td class="queue-service">Retrait</td>
+          <td><span class="badge en-attente">En attente</span></td>
+        </tr>
+        <tr>
+          <td class="queue-num">N10</td>
+          <td class="queue-service">Dépôt</td>
+          <td><span class="badge termine">Terminé</span></td>
+        </tr>
+        <tr>
+          <td class="queue-num">N26</td>
+          <td class="queue-service">Consultation</td>
+          <td><span class="badge en-attente">En attente</span></td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
-
-  <button class="btn-refresh" onclick="location.reload()">Actualiser</button>
-  <a href="index.html" class="btn-retour">Retour à l'accueil</a>
-
 </div>
 
-<footer>
-    <div>
-    <h3>Nexto</h3>
-    <p>&copy; 2024 Nexto. Tous droits réservés.</p>
-</div>
-<div>
-    <h3>Contact</h3>
-    <p>Email: info@nexto.fr</p>
-</div>
-<div>
-<ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Facebook</a></li>
-    </ul>
-</div>
-</footer>
+
+
 </body>
 </html>
