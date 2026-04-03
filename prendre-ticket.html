@@ -1,66 +1,47 @@
-html
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexto — Service Administratif</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>Nexto - Ticket</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <b>Nexto</b>
-    <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<!-- HEADER -->
+<header>
+  <div class="logo"></div>
+  <nav>
+    <a href="index.html">Accueil</a>
+  </nav>
+</header>
 
-  <main>
+<!-- PAGE 2 MAIN -->
+<div class="page2-wrapper">
+  <div class="page2">
+
     <h1>Bienvenue sur Nexto</h1>
-    <p>Prenez un ticket pour votre service administratif</p>
 
-    <form action="#" method="get">
+    <div class="services">
 
-      <p>
-        <label>
-          <input type="radio" name="service" value="carte_identite" />
-          Carte d'identité / Passeport
-        </label>
-      </p>
+      <input type="radio" name="service" id="s1">
+      <label for="s1">Carte d'identité / Passeport</label>
 
-      <p>
-        <label>
-          <input type="radio" name="service" value="permis_conduire" />
-          Permis de conduire
-        </label>
-      </p>
+      <input type="radio" name="service" id="s2">
+      <label for="s2">Permis de conduire</label>
 
-      <p>
-        <label>
-          <input type="radio" name="service" value="certificat_residence" />
-          Certificat de résidence
-        </label>
-      </p>
+      <input type="radio" name="service" id="s3">
+      <label for="s3">Certificat de résidence</label>
 
-      <p>
-        <label>
-          <input type="radio" name="service" value="impots_taxes" />
-          Impôts / Taxes
-        </label>
-      </p>
+      <input type="radio" name="service" id="s4">
+      <label for="s4">Impôt / Taxes</label>
 
-      <p>
-        <a href="Liste-attente.html" >Prendre un ticket</a>
-        
-      </p>
+      <a href="gerer-ticket.html" class="ticket-btn">Prendre un ticket</a>
 
-    </form>
+    </div>
 
-    <p><small>ℹ️ Veuillez patienter après avoir pris votre ticket</small></p>
-  </main>
+  </div>
+</div>
+
 
 </body>
 </html>

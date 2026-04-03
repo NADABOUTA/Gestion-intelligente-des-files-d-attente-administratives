@@ -9,6 +9,12 @@ html
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <header>
+    <b>Nexto</b>
+    <nav>
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
 <div class="container">
 
   <h1>File d'attente</h1>
@@ -25,7 +31,7 @@ html
       <tr>
         <td class="num">A23</td>
         <td class="service">Dépôt</td>
-        <td class="status"><span class="badge en-cours">En cours</span></td>
+<td><span class="badge en-cours">En cours</span></td>
       </tr>
       <tr>
         <td class="num">A24</td>
@@ -50,12 +56,30 @@ html
     </tbody>
   </table>
 
-  <div class="wait-box">
+<div class="temps-attente-estime">
     Temps d'attente estimé : 12 minutes
   </div>
 
   <button class="btn-refresh" onclick="location.reload()">Actualiser</button>
+  <a href="index.html" class="btn-retour">Retour à l'accueil</a>
 
 </div>
+
+<footer>
+    <div>
+    <h3>Nexto</h3>
+    <p>&copy; 2024 Nexto. Tous droits réservés.</p>
+</div>
+<div>
+    <h3>Contact</h3>
+    <p>Email: info@nexto.fr</p>
+</div>
+<div>
+<ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Facebook</a></li>
+    </ul>
+</div>
+</footer>
 </body>
 </html>
